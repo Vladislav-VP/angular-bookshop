@@ -8,6 +8,8 @@ import { LoginComponent } from './components/login/login.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { CartComponent } from './components/cart/cart.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { AppHeaderComponent } from './components/_layout/app-header/app-header.component';
+import { AppLayoutComponent } from './components/_layout/app-layout/app-layout.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AdminComponent } from './components/admin/admin.component';
     LoginComponent,
     ShopComponent,
     CartComponent,
-    AdminComponent
+    AdminComponent,
+    AppHeaderComponent,
+    AppLayoutComponent
   ],
   imports: [
     BrowserModule,
