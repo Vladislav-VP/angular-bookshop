@@ -1,15 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppHeaderComponent } from 'src/app/components/_layout/app-header/app-header.component';
+import { AppLayoutComponent } from 'src/app/components/_layout/app-layout/app-layout.component';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+import { AppComponent } from 'src/app/app.component';
+import { AdminComponent } from 'src/app/components/admin/admin.component';
+import { RegistrationComponent } from 'src/app/components/registration/registration.component';
+import { LoginComponent } from 'src/app/components/login/login.component';
+import { ShopComponent } from 'src/app/components/shop/shop.component';
+import { CartComponent } from 'src/app/components/cart/cart.component';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { RegistrationComponent } from './components/registration/registration.component';
-import { LoginComponent } from './components/login/login.component';
-import { ShopComponent } from './components/shop/shop.component';
-import { CartComponent } from './components/cart/cart.component';
-import { AdminComponent } from './components/admin/admin.component';
-import { AppHeaderComponent } from './components/_layout/app-header/app-header.component';
-import { AppLayoutComponent } from './components/_layout/app-layout/app-layout.component';
 
 @NgModule({
   declarations: [
