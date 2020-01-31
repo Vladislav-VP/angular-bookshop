@@ -2,13 +2,17 @@
     <h1>Register</h1>
     <form>
         <label for="email">Name</label>
-        <input type="text" class="form-control" required>
+        <input type="text" class="form-control" required [(ngModel)]="model.name">
         <label for="email">Email</label>
-        <input type="text" class="form-control" required>
+        <input type="text" class="form-control" required [(ngModel)]="model.email">
         <label for="password">Password</label>
-        <input type="password" class="form-control" required>
+        <input type="password" class="form-control" required [(ngModel)]="model.password">
         <label for="confirmPassword">Confirm password</label>
-        <input type="password" class="form-control" required>
+        <input type="password" class="form-control" required [(ngModel)]="model.confirmPassword">
+        <label for="roles">Role</label>
+        <select class="form-control"  required>
+            <option *ngFor="let role of roles" [value]="role">{{role}}</option>
+        </select>
         <button type="submit" class="btn btn-default">Register</button>
     </form>
     <a class="btn btn-default" routerLink="/login">Back</a>

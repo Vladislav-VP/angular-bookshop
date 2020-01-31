@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/entities/user';
+import { UserRole } from 'src/app/enums/user-role'
 
 @Component({
   selector: 'app-registration',
@@ -7,15 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrationComponent implements OnInit {
 
-  name: string;
-  email: string;
-  password: string;
-  confirmPassword: string;
-  // - TODO: Add role
+    roles = [UserRole.Viewer, UserRole.Admin, ]
 
-  constructor() { }
+    model = new User();
 
-  ngOnInit() {
+    constructor() {
+     }
+
+    ngOnInit() {
   }
 
 }

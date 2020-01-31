@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { AppHeaderComponent } from 'src/app/components/_layout/app-header/app-header.component';
 import { AppLayoutComponent } from 'src/app/components/_layout/app-layout/app-layout.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
@@ -20,13 +21,14 @@ import { CartComponent } from 'src/app/components/cart/cart.component';
     CartComponent,
     AdminComponent,
     AppHeaderComponent,
-    AppLayoutComponent
+    AppLayoutComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,]
 })
 export class AppModule { }
