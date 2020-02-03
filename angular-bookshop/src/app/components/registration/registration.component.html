@@ -1,16 +1,16 @@
 <div class="container">
     <h1>Register</h1>
-    <form>
+    <form #form="ngForm">
         <label for="email">Name</label>
-        <input type="text" class="form-control" required [(ngModel)]="model.name">
+        <input type="text" class="form-control" required [(ngModel)]="model.name" name="name">
         <label for="email">Email</label>
-        <input type="text" class="form-control" required [(ngModel)]="model.email">
+        <input type="text" class="form-control" required [(ngModel)]="model.email" name="email">
         <label for="password">Password</label>
-        <input type="password" class="form-control" required [(ngModel)]="model.password">
+        <input type="password" class="form-control" required [(ngModel)]="model.password" name="password">
         <label for="confirmPassword">Confirm password</label>
-        <input type="password" class="form-control" required [(ngModel)]="model.confirmPassword">
-        <label for="roles">Role</label>
-        <select class="form-control"  required>
+        <input type="password" class="form-control" required [(ngModel)]="model.confirmPassword" name="confirmPassword">
+        <label for="roles" >Role</label>
+        <select class="form-control" required [(ngModel)]="model.role" name="role">
             <option *ngFor="let role of roles" [value]="role">{{role}}</option>
         </select>
         <button type="submit" class="btn btn-default" (click)="register(model)">Register</button>

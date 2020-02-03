@@ -6,14 +6,15 @@ import { User } from 'src/app/entities/user';
 })
 export class UserService {
 
-  user: User;
+    user: User;
 
-  constructor() { }
+    constructor() { }
 
-  register(user) {
-      this.user.name = user.name;
-      this.user.email = user.email;
-      this.user.password = user.password;
-      this.user.role = user.role;
-  }
+    register(newUser: User) {
+        this.user = new User();
+        this.user.name = newUser.name;
+        this.user.email = newUser.email;
+        this.user.password = newUser.password;
+        this.user.role = newUser.role;
+    }
 }

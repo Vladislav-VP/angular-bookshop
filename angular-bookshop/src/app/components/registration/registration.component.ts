@@ -23,10 +23,8 @@ export class RegistrationComponent implements OnInit {
     ngOnInit() {
     }
 
-    register(model) {
-        this.userService.register(model);
+    register(newUser: User) {
+        this.userService.register(this.model);
     }
-
-
-
+    
 }
