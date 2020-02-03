@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { User } from 'src/app/entities/user';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class UserService {
 
@@ -16,5 +16,9 @@ export class UserService {
         this.user.email = newUser.email;
         this.user.password = newUser.password;
         this.user.role = newUser.role;
+    }
+
+    login(email: string, password: string) {
+        
     }
 }
